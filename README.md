@@ -4,7 +4,7 @@ Submitted by: **Charlize Angeles**
 
 This web app: **Create a pokemon team from scratch by choosing their name, type (poison, water, etc), and health level. Members of the team can be added, edited, and removed.**
 
-Time spent: **11** hours spent in total
+Time spent: **12** hours spent in total
 
 ## Required Features
 
