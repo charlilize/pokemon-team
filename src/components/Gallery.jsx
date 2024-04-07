@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const [pokemon, setPokemon] = useState([]);
-  
+
   const typeToImageMap = {
     Bug: "src/assets/pokemon-types/bug.png",
     Dark: "src/assets/pokemon-types/dark.png",
@@ -61,9 +61,10 @@ const Gallery = () => {
                   <p className="text-xl">HP: {pokemon.hp}</p>
                 </Link>
               </CardHeader>
-              <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Button>Edit</Button>
+                <Link to={`/edit/${pokemon.id}`}>
+                    <Button>Edit</Button>
+                </Link>
               </CardFooter>
             </Card>
           ))

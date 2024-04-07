@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"; // Import the useParams hook
 import { supabase } from "@/client";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import bugImage from "@/assets/pokemon-types/bug.png";
 import darkImage from "@/assets/pokemon-types/dark.png";
 import dragonImage from "@/assets/pokemon-types/dragon.png";
@@ -60,11 +62,21 @@ const DetailView = () => {
   return (
     <div>
       {pokemon ? (
-        <div>
-          <h2>
-            {pokemon.name}, a {pokemon.type} type Pokémon, has {pokemon.hp} HP.
-          </h2>
-          <img src={typeToImageMap[pokemon.type]} />
+        <div className="flex flex-col">
+          <h2 className="text-3xl mt-5 font-bold">Pokemon's Name: {pokemon.name}</h2>
+          <div className="flex justify-center my-10">
+            <img className="w-[300px]" src={typeToImageMap[pokemon.type]} />
+          </div>
+
+          <div className="flex justify-center mb-5">
+            <div className="border-gray-500 border-2 flex p-3 rounded-3xl justify-evenly w-[700px]">
+              <h2 className="text-xl font-bold">Pokemon's Type: {pokemon.type}</h2>
+              <h2 className="text-xl font-bold">Pokemon's Health: {pokemon.hp} hp</h2>
+            </div>
+          </div>
+
+          <h2 className="text-lg font-bold mb-10">{pokemon.hp > 100 ? "WOW A BUFF ONE! This one's strong." : "Ehh.. this one seems fragile."}</h2>
+          <Link to={`/edit/${pokemon.id}`}><Button className="text-lg p-7">Wanna edit {pokemon.name}?</Button></Link>
         </div>
       ) : (
         <p>Loading...</p>
