@@ -5,6 +5,7 @@ import './index.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./routes/Layout";
 import CreatePokemon from './components/CreatePokemon.jsx';
+import Gallery from "./components/Gallery.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -12,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Layout/>}>
           <Route index={true} path="/" element={<App/>} />
           <Route index={true} path="/create" element={<CreatePokemon />} />
-          <Route index={true} path="/gallery" element={<App />} />
+          <Route index={true} path="/gallery" element={<Gallery/>} />
         </Route> 
     </Routes>
   </BrowserRouter>
