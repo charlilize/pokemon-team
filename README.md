@@ -41,7 +41,7 @@ GIF created with LiceCAP
 
 ## Notes
 
-A challenge was setting up the router to connect all the pages; I had to refer to the lab a lot. It was also tricky creating the Create Pokemon page since I had to learn how to connect the different input types like text and a drop down menu with Supabase. Since I had images that change according to the pokemon's type, I also had  trouble with ot remdeormg/ 
+A challenge was setting up the router to connect all the pages; I had to refer to the lab a lot. It was also tricky creating the Create Pokemon page since I had to learn how to connect the different input types like text and a drop down menu with Supabase. Since I had images that change according to the pokemon's type, I also had  trouble with it rendering. 
 
 ## License
 
