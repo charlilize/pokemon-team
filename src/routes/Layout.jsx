@@ -13,7 +13,7 @@ const Layout = () => {
             <Link to="/create">Create a Pokemon</Link>
           </Button>
           <Button variant="link" className="text-lg" key="gallery-button">
-            <Link to="/gallery">View Gallery</Link>
+            <Link to="/gallery">Pokemon Gallery</Link>
           </Button>
         </ul>
       </nav>
