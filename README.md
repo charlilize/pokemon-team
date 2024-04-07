@@ -30,7 +30,7 @@ a
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![walkthrough](https://github.com/charlilize/pokemon-team/assets/148724296/68d4a8b1-d4c2-47e8-8a92-013b8c50b56f)
+![walkthrough](https://github.com/charlilize/pokemon-team/assets/148724296/8a471e37-ef5d-4ece-a805-cadf1eab3450)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCAP
